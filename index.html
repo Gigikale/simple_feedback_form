@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div>
+        <form action="submit_feedback.html" method="post">
+          <div class="title-wrapper">
+            <h3>Feedback Form</h3>
+          </div>
+
+          <label for="name">Name:</label><br /><br />
+          <input
+            type="text"
+            placeholder="Enter Name"
+            class="input-fields"
+            id="name"
+            name="name"
+            required
+          /><br /><br />
+
+          <label for="email">Email:</label><br /><br />
+          <input
+            type="email"
+            placeholder="Enter email"
+            class="input-fields"
+            id="email"
+            name="email"
+            required
+          /><br /><br />
+
+          <label for="subject">Subject:</label><br /><br />
+          <input
+            type="text"
+            placeholder="Enter subject"
+            class="input-fields"
+            id="subject"
+            name="subject"
+            required
+          /><br /><br />
+
+          <label for="message">Message:</label><br /><br />
+          <textarea
+            id="message"
+            placeholder="Enter message"
+            name="message"
+            rows="4"
+            cols="4"
+            required
+          ></textarea
+          ><br /><br />
+
+          <label for="satisfaction">Satisfaction Level:</label>
+          <select
+            class="satisfaction-level"
+            id="satisfaction"
+            name="name"
+            required
+          >
+            <option value="Satisfied">Satisfied</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Dissatisfied">Dissatisfied</option>
+            <option value="Other">Other</option></select
+          ><br /><br />
+          <div class="title-wrapper">
+            <button class="submit">Submit Feedback</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
